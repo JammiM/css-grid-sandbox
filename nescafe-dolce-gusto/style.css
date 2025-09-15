@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #2c2922;
+  color: white;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 2mm;
+  padding: 3em;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.subtitle__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  background-color: #625e53;
+  justify-items: center;
+  align-items: center;
+}
+
+.subtitle__intensity__title {
+  text-transform: uppercase;
+  /* font-weight: 900; */
+  /* justify-items: end; */
+}
+
+.subgrid__section {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  display: grid;
+  border: 2px solid white;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.subgrid__sourced {
+  display: grid;
+  grid-row: 1;
+  grid-template-columns: 1fr 1fr;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.arabica-logo {
+  grid-row: 2;
+  border: 2px solid white;
+}
+.pod_amount {
+  grid-row: 2;
+  border: 2px solid white;
+}
