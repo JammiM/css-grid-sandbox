@@ -13,11 +13,22 @@ main {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  padding: 10px;
+  gap: 20px;
 }
 
 .footer__item {
+  display: grid;
+  grid-template-columns: 1fr;
   justify-items: center;
+}
+
+.footer__item_image {
+  max-width: 25%;
+}
+
+.footer__item_desc {
+  text-align: center;
 }
 
 .filter-white {
@@ -90,6 +101,9 @@ main {
   justify-items: center;
 }
 
+/* .heading * {
+  border: 1px solid red;
+} */
 .general_info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
