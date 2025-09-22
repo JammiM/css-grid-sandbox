@@ -8,6 +8,7 @@ body {
 
 main {
   display: grid;
+  gap: 30px;
 }
 .footer {
   display: grid;
@@ -83,5 +84,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  border: 1px solid red;
+}
+
+.general_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.general_info__item {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }
