@@ -1,9 +1,10 @@
-:root {
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
+  --border: #e5e4e7; */
+
+/* --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
@@ -27,10 +28,10 @@
 
   @media (max-width: 1024px) {
     font-size: 16px;
-  }
-}
+  } 
+}*/
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
@@ -48,9 +49,9 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
-}
+} */
 
-body {
+/* body {
   margin: 0;
 }
 
@@ -59,9 +60,9 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
@@ -78,27 +79,27 @@ h2 {
   @media (max-width: 1024px) {
     font-size: 20px;
   }
-}
-p {
+} */
+/* p {
   margin: 0;
-}
+} */
 
-code,
+/* code,
 .counter {
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
-}
+} */
 
-code {
+/* code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */
 
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -115,9 +116,9 @@ code {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
-}
+} */
 
-.hero {
+/* .hero {
   position: relative;
 
   .base,
@@ -154,9 +155,9 @@ code {
     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
       scale(0.8);
   }
-}
+} */
 
-#app {
+/* #app {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
@@ -166,9 +167,9 @@ code {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
+} */
 
-#center {
+/* #center {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -180,9 +181,9 @@ code {
     padding: 32px 20px 24px;
     gap: 18px;
   }
-}
+} */
 
-#next-steps {
+/* #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
@@ -205,18 +206,18 @@ code {
     flex-direction: column;
     text-align: center;
   }
-}
+} */
 
-#docs {
+/* #docs {
   border-right: 1px solid var(--border);
 
   @media (max-width: 1024px) {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
-}
+} */
 
-#next-steps ul {
+/* #next-steps ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -263,17 +264,17 @@ code {
       box-sizing: border-box;
     }
   }
-}
+} */
 
-#spacer {
+/* #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
   @media (max-width: 1024px) {
     height: 48px;
   }
-}
+} */
 
-.ticks {
+/* .ticks {
   position: relative;
   width: 100%;
 
@@ -292,5 +293,86 @@ code {
   &::after {
     right: 0;
     border-right-color: var(--border);
+  }
+} */
+
+body {
+  /* background-color: red; */
+}
+
+#m-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header"
+    "burger burger"
+    "burger burger"
+    "fries bonus"
+    "fries drink";
+  gap: 1rem;
+}
+
+.single-grid-item {
+  border: 1px solid red;
+  /* background-color: lightblue; */
+  border-radius: 4rem;
+}
+
+#m-header {
+  grid-area: header;
+  font-size: 3rem;
+}
+
+#m-burger {
+  grid-area: burger;
+
+  background-color: #f7d379;
+  & h3 {
+    font-size: 2rem;
+    color: #992841;
+  }
+}
+
+#m-fries {
+  grid-area: fries;
+
+  background-color: #cbaed5;
+  & h3 {
+    font-size: 2rem;
+    color: #992841;
+  }
+}
+
+#m-bonus {
+  grid-area: bonus;
+
+  background-color: #ea8557;
+  & h3 {
+    font-size: 2rem;
+    color: #f6d180;
+  }
+}
+
+#m-drink {
+  grid-area: drink;
+
+  background-color: #a42a39;
+  & h3 {
+    font-size: 2rem;
+    color: #f6d180;
+  }
+}
+
+@media (min-width: 1024px) {
+  #m-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas:
+      "burger burger header header"
+      "burger burger fries bonus"
+      "burger burger fries drink";
+    gap: 1rem;
   }
 }
