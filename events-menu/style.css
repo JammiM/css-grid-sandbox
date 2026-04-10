@@ -1,0 +1,35 @@
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(10px, 0.25fr) 2fr repeat(
+      4,
+      minmax(10px, 0.25fr)
+    );
+
+  /* justify-items: center; */
+  align-items: center;
+
+  /* justify-content: center; */
+
+  border: 1px solid red;
+  /* width: 90%;  */
+  height: 100vh;
+}
+
+.menu-item {
+  display: grid;
+  place-items: center;
+  background-color: rgb(171, 171, 171);
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.item2 {
+  /* grid-column: span 2; */
+}
+
+.item4 {
+  grid-column: auto / -1;
+}
