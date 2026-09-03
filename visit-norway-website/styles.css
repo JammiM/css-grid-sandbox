@@ -1,0 +1,15 @@
+.text-content {
+  margin-inline: 0.5rem;
+}
+
+.image-content {
+  min-height: 50vh;
+
+  background-position: center center;
+  background-size: cover;
+
+  &.deer {
+    background-image: url("./images/Nesna_Norway_HGR_149555_1920_Photo_Getty_Images.webp");
+    /* border: 1px solid red; */
+  }
+}
