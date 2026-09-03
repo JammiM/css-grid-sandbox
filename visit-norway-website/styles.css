@@ -10,6 +10,21 @@
 
   &.deer {
     background-image: url("./images/Nesna_Norway_HGR_149555_1920_Photo_Getty_Images.webp");
-    /* border: 1px solid red; */
+  }
+
+  &.house {
+    background-image: url("./images/Day_13_Stokmarkes___Svolvaer_v3_SVE_TF_Summer_2526_MS_Svolvaer_shutterstock_offset_2381784451.webp");
+  }
+
+  &.island {
+    background-image: url("./images/torghatten-138947-shutterstock.webp");
+  }
+
+  &.pyramid {
+    background-image: url("./images/Nesna_Norway_HGR_149555_1920_Photo_Getty_Images.webp");
+  }
+
+  &.sunset {
+    background-image: url("./images/norway_stokmarknes_hurtigruten_museum_summer_hgr_163740_fabrizio_bardelli_hurtigrutemuseet.webp");
   }
 }
