@@ -1,12 +1,36 @@
+.single-row {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .single-row {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(0, 45rem)
+      minmax(0, 45rem)
+      minmax(1rem, 1fr);
+  }
+
+  .text-content {
+    grid-column: -4 / -3;
+  }
+
+  .image-content {
+    grid-column: -3 / -1;
+  }
+}
+
 .text-content {
-  margin-inline: 0.5rem;
+  margin-inline: 1rem;
+  margin-block: 1rem;
 }
 
 .image-content {
   min-height: 50vh;
-
   background-position: center center;
   background-size: cover;
+
+  grid-row: 1 / 2;
 
   &.deer {
     background-image: url("./images/Nesna_Norway_HGR_149555_1920_Photo_Getty_Images.webp");
