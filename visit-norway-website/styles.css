@@ -12,11 +12,11 @@
   }
 
   .text-content {
-    grid-column: -4 / -3;
+    grid-column: 2 / 3;
   }
 
   .image-content {
-    grid-column: -3 / -1;
+    grid-column: 3 / -1;
   }
 }
 
