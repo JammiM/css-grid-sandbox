@@ -1,0 +1,98 @@
+.single-review {
+  /* background-color: red; */
+  display: grid;
+  height: 400px;
+
+  margin: 0 auto;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows */
+  /* grid-template-columns: 3fr; */
+
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  /* grid-template-rows: minmax(30px, 1fr); */
+}
+
+.single-review .single-review--date {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+.single-review .single-review--authour {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
+
+.single-review .main-review {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+}
+
+.single-review .reviewer-ratings {
+  grid-column: 1 / -1;
+  grid-row: 4 / span 1;
+}
+
+.single-review .comfort-level {
+  grid-column: 1 / -1;
+  grid-row: 5 / span 1;
+}
+
+.single-review .helpful {
+  grid-column: 1 / -1;
+  grid-row: 6 / span 1;
+}
+
+/* 📟 2. Tablets (768px / 48rem and up) */
+/* @media (width >= 48rem) {
+
+} */
+
+/* 💻 3. Laptops & Desktops (1024px / 64rem and up) */
+/* @media (width >= 64rem) {
+
+} */
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 48rem) {
+  .single-review {
+    max-width: 60rem;
+    /* background-color: lightblue; */
+    /* 
+    margin: 0 auto; */
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: 0.5fr; */
+  }
+
+  .single-review .single-review--date {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .single-review .single-review--authour {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .single-review .main-review {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  .single-review .reviewer-ratings {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .single-review .comfort-level {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .single-review .helpful {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+}
